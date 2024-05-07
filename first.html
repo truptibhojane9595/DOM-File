@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            height: 90px;
+            width: 90px;
+            background-color: rgb(244, 224, 200);
+            border: 2px solid black;
+            display: inline-block;
+            margin: 2px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- comment node --> <!-- comment node -->
+        <div class="box">BOX-1</div> <!--element node -->
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-5</div>
+    </div>
+    <script>
+        document.title = "WE ARE LEARN DOM";
+        // console.log(document.body);
+        // document.body.style.backgroundColor = "pink" 
+    </script>
+
+    <!-- .......................................................commands............................................ -->
+    <!-- to map a document of html  -->
+
+    <!-- document.body.childNodes -->
+    <!-- document.body.childNodes[1] -->
+    <!-- document.body.childNodes[1].childNodes -->
+    <!-- document.body.childNodes[1].firstChild -->
+    <!-- document.body.childNodes[1].lasttChild -->
+    <!-- cont.firstElementChild -->
+    <!-- cont.lastElementChild -->
+    <!-- document.body.lastElementChild.style.color = "red" -->
+    <!-- cont.lastElementChild.parentElement -->
+    <!-- document.body.firstElementChild.firstElementChild -->
+    <!-- document.body.firstElementChild.children -->
+    <!-- document.body.firstElementChild.children[0] -->
+    <!-- document.body.firstElementChild.children[0].nextElementSibling -->
+    <!-- document.body.firstElementChild.children[2].previousElementSibling -->
+    <!-- document.body.firstElementChild.children[0].nextSibling ...............text node gives -->
+    <!-- document.body.firstElementChild.children[2].previousSibling -->
+
+
+</body>
+
+</html>
