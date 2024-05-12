@@ -17,63 +17,63 @@
 // array,array methiod
 // addContact("name","phoneno","email");
 
-function CreateContact(name, phoneNumber, email) {
-    return {
-        name: name,
-        phoneNumber: phoneNumber,
-        email: email
-    };
-}
+// function CreateContact(name, phoneNumber, email) {
+//     return {
+//         name: name,
+//         phoneNumber: phoneNumber,
+//         email: email
+//     };
+// }
 
-let phoneBook = [];
-function AddContact(name, phoneNumber, email) {
-    let contact = CreateContact(name, phoneNumber, email);
-    phoneBook.push(contact);
-    console.log(phoneBook);
-}
-function SearchContact(name) {
-    let found = phoneBook.find(contact => contact.name === name);
-    if (found) {
-        console.log("Available :");
-        console.log("Name:", found.name);
-        console.log("Phone Number:", found.phoneNumber);
-        console.log("Email:", found.email);
-    } else {
-        console.log(" Not Available");
-    }
-}
+// let phoneBook = [];
+// function AddContact(name, phoneNumber, email) {
+//     let contact = CreateContact(name, phoneNumber, email);
+//     phoneBook.push(contact);
+//     console.log(phoneBook);
+// }
+// function SearchContact(name) {
+//     let found = phoneBook.find(contact => contact.name === name);
+//     if (found) {
+//         console.log("Available :");
+//         console.log("Name:", found.name);
+//         console.log("Phone Number:", found.phoneNumber);
+//         console.log("Email:", found.email);
+//     } else {
+//         console.log(" Not Available");
+//     }
+// }
 
-function UpdateContact(name, newPhoneNumber, newEmail) {
-    let found = phoneBook.find(contact => contact.name === name);
-    if (found) {
-        found.phoneNumber = newPhoneNumber;
-        found.email = newEmail;
-        console.log("Update :");
-    } else {
-        console.log("Not Available");
-    }
-}
+// function UpdateContact(name, newPhoneNumber, newEmail) {
+//     let found = phoneBook.find(contact => contact.name === name);
+//     if (found) {
+//         found.phoneNumber = newPhoneNumber;
+//         found.email = newEmail;
+//         console.log("Update :");
+//     } else {
+//         console.log("Not Available");
+//     }
+// }
 
-function DeleteContact(name) {
-    let index = phoneBook.findIndex(contact => contact.name === name);
-    if (index !== -1) {
-        phoneBook.splice(index, 1);
-        console.log(" Deleted :");
-    } else {
-        console.log("Not Available");
-    }
-}
+// function DeleteContact(name) {
+//     let index = phoneBook.findIndex(contact => contact.name === name);
+//     if (index !== -1) {
+//         phoneBook.splice(index, 1);
+//         console.log(" Deleted :");
+//     } else {
+//         console.log("Not Available");
+//     }
+// }
 
-AddContact("Trupti Bhojane", "7527451320", "truptibhojane99@gmail.com");
-AddContact("Sakshi Nimkar", "9821489036", "sakshinimkar@45gmail.com");
+// AddContact("Trupti Bhojane", "7527451320", "truptibhojane99@gmail.com");
+// AddContact("Sakshi Nimkar", "9821489036", "sakshinimkar@45gmail.com");
 
-SearchContact("Trupti Bhojane");
-SearchContact("Sakshi Nimkar");
-SearchContact("Sonal");
+// SearchContact("Trupti Bhojane");
+// SearchContact("Sakshi Nimkar");
+// SearchContact("Sonal");
 
-UpdateContact("Trupti Bhojane", "1234567899", "truptibhojane99@gmail.com");
-SearchContact("Trupti Bhojane");
+// UpdateContact("Trupti Bhojane", "1234567899", "truptibhojane99@gmail.com");
+// SearchContact("Trupti Bhojane");
 
-DeleteContact("Sakshi Nimkar");
-SearchContact("Sakshi Nimkar");
+// DeleteContact("Sakshi Nimkar");
+// SearchContact("Sakshi Nimkar");
 

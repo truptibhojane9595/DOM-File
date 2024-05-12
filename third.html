@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="mylist">
+        <li>home</li>
+        <li>about</li>
+        <li>cotact</li>
+    </ul>
+    <div class="container">
+        <p>i am para</p>
+    </div>
+
+    <div class="first"></div>
+    <div class="second"></div>
+
+    <script>
+        let mylist = document.getElementById("mylist");
+        let aboutli = mylist.children[1];
+
+        let newli = document.createElement("li");
+        newli.innerHTML = "services";
+        mylist.replaceChild(newli,aboutli);
+
+
+
+       // let ptag = document.querySelector(".container p");
+        //ptag.replaceWith("i am random text");
+        //let newele = document.createElement("h1");
+        //newele.innerHTML = "i am h1 tag";
+        //ptag.replaceWith(newele);
+
+        //let newele = document.createElement("input");
+        //newele.value= "i am input tag";
+
+        //let btn = document.createElement("button");
+       // btn.innerHTML="Click Me";
+        //ptag.replaceWith(newele);
+        //ptag.replaceWith(newele,btn);
+        //or
+        //ptag.replaceWith(newele,btn,"i am random text");
+        //......................................................................
+
+        let firstdiv = document.querySelectorAll(".div")[0];
+        let seconddiv = document.querySelectorAll(".div")[1];
+        let isequal = firstdiv.isEqualNode(seconddiv);
+        console.log(isequal);
+
+
+    </script>
+</body>
+</html>
