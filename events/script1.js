@@ -4,8 +4,8 @@
 
 //...................................... Event bubbling...................................................
 
-// const Grandparent = document.querySelector(".grandparent");
-// const Parent = document.querySelector(".parent");
+const Grandparent = document.querySelector(".grandparent");
+const Parent = document.querySelector(".parent");
 // const Child = document.querySelector(".child");
 
 // Grandparent.addEventListener("click",()=>{
@@ -52,17 +52,17 @@
 
 // Grandparent.addEventListener("click", (e) => {
 //     e.stopPropagation();
-//     alert("Grandparent Bubbling");
+//     console.log("Grandparent Bubbling");
 // })
 
 // Parent.addEventListener("click", () => {
-//     e.stopPropagation();
-//     alert("Parent Bubbling");
+//     // e.stopPropagation();
+//     console.log("Parent Bubbling");
 // })
 
 // Child.addEventListener("click", () => {
-//     e.stopPropagation();
-//     alert("Child Bubbling");
+//     // e.stopPropagation();
+//     console.log("Child Bubbling");
 // })
 
 // Event capturing or trickling
@@ -74,21 +74,21 @@
 // Grandparent.addEventListener("click",(e)=>{
 // e.stopPropagation();
 
-//     alert("Grandparent Bubbling");
+//     alconsole.log("Grandparent capturing");
 // },{capture:true}
 // )
 
 // Parent.addEventListener("click",(e)=>{
-// e.stopPropagation();
+// // e.stopPropagation();
 
-//     alert("Parent Bubbling");
+//     console.log("Parent capturing");
 // },{capture:true}
 // )
 
 // Child.addEventListener("click",(e)=>{
-// e.stopPropagation();
+// // e.stopPropagation();
 
-//     alert("Child Bubbling");
+//     console.log("Child capturing");
 // },{capture:true}
 // )
 
@@ -104,21 +104,21 @@
 // Grandparent.addEventListener("click",(e)=>{
 // e.stopPropagation();
 
-//     alert("Grandparent Bubbling");
+//     console.log("Grandparent Bubbling");
 // },{once:true}
 // )
 
 // Parent.addEventListener("click",(e)=>{
-// e.stopPropagation();
+// // e.stopPropagation();
 
-//     alert("Parent Bubbling");
+//     console.log("Parent Bubbling");
 // },{once:true}
 // )
 
 // Child.addEventListener("click",(e)=>{
-// e.stopPropagation();
+// // e.stopPropagation();
 
-//     alert("Child Bubbling");
+//     console.log("Child Bubbling");
 // },{once:true}
 // )
 
@@ -131,35 +131,35 @@
 // Grandparent.addEventListener("click",(e)=>{
 // e.stopPropagation();
 
-//     alert("Grandparent capturing");
+//     console.log("Grandparent capturing");
 // },{once:true,capture:true}
 // )
 
 // Parent.addEventListener("click",(e)=>{
 // e.stopPropagation();
 
-//     alert("Parent capturing");
+//     console.log("Parent capturing");
 // },{once:true,capture:true}
 // )
 
 // Child.addEventListener("click",(e)=>{
 // e.stopPropagation();
 
-//     alert("Child capturing");
+//     console.log("Child capturing");
 // },{once:true,capture:true}
 // )
 
 //.........................................removeevenlistener.............................................
 
 // function printGrandParent(){
-//     console.log('grandParent bubbling');
+//     alert('grandParent bubbling');
 // }
 
-// grandParent.addEventListener("click", printGrandParent);
+// grandparent.addEventListener("click", printGrandParent);
 
 // setTimeout(() => {
-//     grandParent.removeEventListener("click", printGrandParent);
-// }, 2000)
+//     grandparent.removeEventListener("click", printGrandParent);
+// }, 5000)
 
 
 // To remove the element after a given time using a button
@@ -175,7 +175,7 @@ grandparent.addEventListener("click", printGrandParent);
 function removeGrandParent(){
     setTimeout(() => {
         grandparent.removeEventListener("click", printGrandParent);
-    }, 2000)
+    }, 9000)
 }
 
-button.addEventListener('click', removeGrandParent);
+btn.addEventListener('click', removeGrandParent);
