@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandparent {
+            background-color: red;
+            height: 12rem;
+            width: 24rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent {
+            background-color: green;
+            height: 8rem;
+            width: 16rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child {
+            background-color: blue;
+            height: 4rem;
+            width: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grandparent">Grand
+        <div class="parent">Parent
+            <div class="child">Child</div>
+        </div>
+    </div>
+    <button id="btn">click</button>
+
+    <script>
+        const grandparent = document.querySelector('.grandparent');
+        //grandparent.addEventListener('mouseover', () => {
+        //    console.log('mouseover');
+        //});
+
+       // grandparent.addEventListener('mouseenter', () => {
+        //    console.log('mouseenter');
+       // });
+
+        //grandparent.addEventListener('mouseleave', () => {
+        //    console.log('mouseleave');
+        //});
+
+        //grandparent.addEventListener('mouseout', () => {
+         //   console.log('mouseout');
+        //});
+
+        
+    </script>
+</body>
+
+</html>
