@@ -1,4 +1,4 @@
- let fragment = new DocumentFragment() 
+//  let fragment = new DocumentFragment() 
 // //OR ....let fragment = document.createDocumentFragment();
 // let languages = ["HTML","CSS","JAVASCRIPT"];
 // let langele = document.querySelector("#language");
